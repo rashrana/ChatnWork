@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="3dp"
+    android:backgroundTint="#272630"
+    android:layout_marginBottom="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/aimage"
+            android:src="@drawable/profiledefault"
+            android:layout_centerVertical="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/aname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/aimage"
+            android:layout_toRightOf="@+id/aimage"
+            android:fontFamily="@font/poppins_medium"
+            android:text="username"
+            android:textColor="#80FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/abutton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Add friend"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

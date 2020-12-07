@@ -1,0 +1,44 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addfToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#605050">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/addfgoback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp"
+            app:drawableEndCompat="@drawable/gobackicon"
+            app:drawableTint="@color/white"
+            android:layout_alignParentStart="true"
+            tools:ignore="RtlSymmetry" />
+
+
+        <TextView
+            android:id="@+id/addftitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/addfgoback"
+            android:layout_toRightOf="@+id/addfgoback"
+            android:fontFamily="@font/poppins_light"
+            android:text="People"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

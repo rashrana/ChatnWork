@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessegeActivity">
+
+    <FrameLayout
+        android:id="@+id/messtbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <include layout="@layout/messege_toolbar" />
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messrecylerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/messedittext"
+        android:layout_below="@+id/messtbar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/messedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/messsend"
+        android:layout_toLeftOf="@id/messsend"
+        android:gravity="end"
+        android:hint="Enter your messege"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:textAlignment="textEnd"
+        android:textSize="22sp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageButton
+        android:id="@+id/messsend"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:src="@drawable/sendicon" />
+
+</RelativeLayout>

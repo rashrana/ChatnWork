@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "782808086614",
+    "firebase_url": "https://chat-n-work.firebaseio.com",
+    "project_id": "chat-n-work",
+    "storage_bucket": "chat-n-work.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782808086614:android:96abbc37e4fb36df7d23f7",
+        "android_client_info": {
+          "package_name": "com.rash.chatnwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782808086614-51lkied6195nt2vs4kdtveq8olj8ne27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM-1XspEaZOX4COjfT_aC7p3ajreKizpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782808086614-51lkied6195nt2vs4kdtveq8olj8ne27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

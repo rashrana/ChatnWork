@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#605050">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Profile"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="23sp"
+        android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_height="match_parent"
+            android:layout_width="70dp"
+            android:drawableRight="@drawable/logouticon"
+            android:drawableEnd="@drawable/logouticon"
+            app:backgroundTint="#605050"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

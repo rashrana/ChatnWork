@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/roundbuttonsent"
+    android:layout_marginBottom="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_gravity="end"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/resimage"
+            android:src="@drawable/profiledefault"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/resname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:text="username"
+            android:fontFamily="@font/poppins_semibold"
+
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/resemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="email@gmail.com"
+            android:fontFamily="@font/poppins_light"
+
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/resdob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="Born In: 2 Apr,2019"
+            android:fontFamily="@font/poppins_light"
+
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/accept"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/roundbutton"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reject"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roundbutton"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
